@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Sistema de Notas</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/formulario.css" />
+    <link rel="stylesheet" href="../css/tabela.css" />
+</head>
+
+<body bgcolor="#F5F5F5">
+    <div class="bar">
+        <img src="ifpb.png" width="65" height="65">
+    </div>
+
+    <div class="form" id="formulario">
+        <legend>Registrar Aluno</legend> <br/>
+        <div>
+            <label>Nome do Aluno</label>
+            <br />
+            <input id="nome" type="text" placeholder="Digite seu nome">
+        </div>
+        <br />
+        <div>
+            <label>1ª Nota</label>
+            <br />
+            <input type="number" min="0" max="10" placeholder="Nota 1" class="notes" id="nota1">
+        </div>
+        <div id="pos-nota2">
+            <label>2ª Nota</label>
+            <br />
+            <input type="number" min="0" max="10" placeholder="Nota 2" class="notes" id="nota2">
+        </div>
+        <div id="pos-nota3">
+            <label>3ª Nota</label>
+            <br />
+            <input type="number" min="0" max="10" placeholder="Nota 3" class="notes" id="nota3">
+        </div>
+        <br/>
+        <div>
+            <button class="btn" id="botao">Enviar</button>
+        </div>
+    </div>
+
+
+    <table align="center">
+
+        <caption>Boletim</caption> <br/>
+        <tr>
+            <th>Aluno</th>
+            <th>1ª Nota</th>
+            <th>2ª Nota</th>
+            <th>3ª Nota</th>
+            <th>Média semestral</th>
+            <th>Situação</th>
+        </tr>
+
+        <tbody id="tabela">
+
+        </tbody>
+    </table>
+
+    <footer id="texto">
+        Copyright: Iriany, Edwiges e Beatriz. 
+    </footer>
+
+    <script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>
